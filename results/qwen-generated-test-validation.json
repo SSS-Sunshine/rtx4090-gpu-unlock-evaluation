@@ -1,0 +1,71 @@
+[
+  {
+    "file": "robot_nan_tests-1.json",
+    "finish_reason": "stop",
+    "tests": [
+      {
+        "name": "test_catches_root_link_quat_w_nan",
+        "passed": true
+      },
+      {
+        "name": "test_catches_joint_vel_inf",
+        "passed": true
+      },
+      {
+        "name": "test_catches_contact_sensor_force_inf",
+        "passed": true
+      },
+      {
+        "name": "test_missing_sensor_does_not_flag",
+        "passed": true
+      }
+    ],
+    "all_passed": true
+  },
+  {
+    "file": "robot_nan_tests-2.json",
+    "finish_reason": "stop",
+    "tests": [
+      {
+        "name": "test_catches_root_link_quat_w_nan",
+        "passed": true
+      },
+      {
+        "name": "test_catches_joint_vel_inf",
+        "passed": true
+      },
+      {
+        "name": "test_catches_contact_sensor_force_inf",
+        "passed": true
+      },
+      {
+        "name": "test_missing_sensor_is_ignored",
+        "passed": true
+      }
+    ],
+    "all_passed": true
+  },
+  {
+    "file": "robot_nan_tests-3.json",
+    "finish_reason": "stop",
+    "tests": [
+      {
+        "name": "test_catches_root_link_quat_w_nan",
+        "passed": true
+      },
+      {
+        "name": "test_catches_joint_vel_inf",
+        "passed": true
+      },
+      {
+        "name": "test_catches_contact_sensor_force_inf",
+        "passed": true
+      },
+      {
+        "name": "test_missing_sensor_does_not_flag_clean_state",
+        "passed": true
+      }
+    ],
+    "all_passed": true
+  }
+]

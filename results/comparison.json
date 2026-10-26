@@ -1,0 +1,279 @@
+{
+  "stock": {
+    "total_s": [
+      92.23821070091799,
+      92.63729350897484,
+      91.84970242599957
+    ],
+    "sampler_s": [
+      77.75201033405028,
+      78.03896418004297,
+      77.70577924279496
+    ],
+    "total_median_s": 92.23821070091799,
+    "sampler_median_s": 77.75201033405028,
+    "peak_power.draw [W]": 447.55,
+    "peak_memory.used [MiB]": 41570.0,
+    "peak_temperature.gpu": 64.0,
+    "gemm": [
+      {
+        "mode": "FP16/FP32",
+        "n": 1024,
+        "warmups": 10,
+        "iterations": 20,
+        "reps": 5,
+        "times_ms": [
+          0.0194048,
+          0.019288,
+          0.0192512,
+          0.0192512,
+          0.0192144
+        ],
+        "median_TF_s": 111.550635,
+        "best_TF_s": 111.76428,
+        "cells_checked": 1048576,
+        "failures": 0
+      },
+      {
+        "mode": "BF16/FP32",
+        "n": 1024,
+        "warmups": 10,
+        "iterations": 20,
+        "reps": 5,
+        "times_ms": [
+          0.0164768,
+          0.0164352,
+          0.016384,
+          0.0163728,
+          0.016384
+        ],
+        "median_TF_s": 131.072003,
+        "best_TF_s": 131.161662,
+        "cells_checked": 1048576,
+        "failures": 0
+      },
+      {
+        "mode": "FP16/FP32",
+        "n": 4096,
+        "warmups": 10,
+        "iterations": 20,
+        "reps": 5,
+        "times_ms": [
+          0.84064798,
+          0.83184643,
+          0.83234882,
+          0.83614721,
+          0.83543043
+        ],
+        "median_TF_s": 164.512745,
+        "best_TF_s": 165.221547,
+        "cells_checked": 16777216,
+        "failures": 0
+      },
+      {
+        "mode": "BF16/FP32",
+        "n": 4096,
+        "warmups": 10,
+        "iterations": 20,
+        "reps": 5,
+        "times_ms": [
+          0.86844797,
+          0.87628803,
+          0.88960161,
+          0.8896512,
+          0.88750076
+        ],
+        "median_TF_s": 154.86066,
+        "best_TF_s": 158.258132,
+        "cells_checked": 16777216,
+        "failures": 0
+      },
+      {
+        "mode": "FP16/FP32",
+        "n": 8192,
+        "warmups": 10,
+        "iterations": 20,
+        "reps": 5,
+        "times_ms": [
+          6.319104,
+          6.31869431,
+          6.31864319,
+          6.31847534,
+          6.32309761
+        ],
+        "median_TF_s": 174.009309,
+        "best_TF_s": 174.015339,
+        "cells_checked": 67108864,
+        "failures": 0
+      },
+      {
+        "mode": "BF16/FP32",
+        "n": 8192,
+        "warmups": 10,
+        "iterations": 20,
+        "reps": 5,
+        "times_ms": [
+          6.46010895,
+          6.48166275,
+          6.4924675,
+          6.49251862,
+          6.49272308
+        ],
+        "median_TF_s": 169.351888,
+        "best_TF_s": 170.200168,
+        "cells_checked": 67108864,
+        "failures": 0
+      }
+    ],
+    "mma_log": "# NVIDIA GeForce RTX 4090, 128 SMs, sm_89, iters=20000 reps=5\nmode       best TF/s   all runs\nf16/f16        329.7 302.7/302.7/302.7/320.7/329.7\nf16/f32        164.9 164.9/164.9/164.9/164.9/164.9\nbf16/f32       164.8 164.8/164.8/164.8/164.8/164.8\ns8/s32         659.4 659.4/659.4/659.4/659.4/659.4\ndp4a           163.8 163.6/163.1/163.7/163.7/163.8\nffma            78.8 78.7/78.8/78.7/78.5/78.6\n"
+  },
+  "unlocked": {
+    "total_s": [
+      73.43073046799998,
+      73.534422834,
+      73.42504034799998
+    ],
+    "sampler_s": [
+      60.06894988099998,
+      60.151927683999986,
+      60.03952615399999
+    ],
+    "total_median_s": 73.43073046799998,
+    "sampler_median_s": 60.06894988099998,
+    "peak_power.draw [W]": 450.32,
+    "peak_memory.used [MiB]": 41995.0,
+    "peak_temperature.gpu": 66.0,
+    "gemm": [
+      {
+        "mode": "FP16/FP32",
+        "n": 1024,
+        "warmups": 10,
+        "iterations": 20,
+        "reps": 5,
+        "times_ms": [
+          0.0163488,
+          0.0163152,
+          0.0163216,
+          0.0162864,
+          0.0162816
+        ],
+        "median_TF_s": 131.624726,
+        "best_TF_s": 131.89635,
+        "cells_checked": 1048576,
+        "failures": 0
+      },
+      {
+        "mode": "BF16/FP32",
+        "n": 1024,
+        "warmups": 10,
+        "iterations": 20,
+        "reps": 5,
+        "times_ms": [
+          0.0136816,
+          0.0135632,
+          0.0134656,
+          0.0135104,
+          0.0134848
+        ],
+        "median_TF_s": 158.950411,
+        "best_TF_s": 159.479243,
+        "cells_checked": 1048576,
+        "failures": 0
+      },
+      {
+        "mode": "FP16/FP32",
+        "n": 4096,
+        "warmups": 10,
+        "iterations": 20,
+        "reps": 5,
+        "times_ms": [
+          0.70236158,
+          0.66401281,
+          0.61521921,
+          0.63102241,
+          0.63370242
+        ],
+        "median_TF_s": 216.882481,
+        "best_TF_s": 223.398345,
+        "cells_checked": 16777216,
+        "failures": 0
+      },
+      {
+        "mode": "BF16/FP32",
+        "n": 4096,
+        "warmups": 10,
+        "iterations": 20,
+        "reps": 5,
+        "times_ms": [
+          0.85696802,
+          0.89379845,
+          0.88238077,
+          0.89031677,
+          0.89045124
+        ],
+        "median_TF_s": 154.370846,
+        "best_TF_s": 160.378159,
+        "cells_checked": 16777216,
+        "failures": 0
+      },
+      {
+        "mode": "FP16/FP32",
+        "n": 8192,
+        "warmups": 10,
+        "iterations": 20,
+        "reps": 5,
+        "times_ms": [
+          5.74991379,
+          5.77152634,
+          5.76508636,
+          5.74878731,
+          5.82118416
+        ],
+        "median_TF_s": 190.719021,
+        "best_TF_s": 191.259751,
+        "cells_checked": 67108864,
+        "failures": 0
+      },
+      {
+        "mode": "BF16/FP32",
+        "n": 8192,
+        "warmups": 10,
+        "iterations": 20,
+        "reps": 5,
+        "times_ms": [
+          5.80536308,
+          5.81791992,
+          5.84263687,
+          5.85518074,
+          5.82952957
+        ],
+        "median_TF_s": 188.610696,
+        "best_TF_s": 189.395842,
+        "cells_checked": 67108864,
+        "failures": 0
+      }
+    ],
+    "mma_log": "# NVIDIA GeForce RTX 4090, 128 SMs, sm_89, iters=20000 reps=5\nmode       best TF/s   all runs\nf16/f16        331.5 302.7/305.8/282.8/331.5/324.4\nf16/f32        331.5 331.5/316.5/331.4/331.4/321.8\nbf16/f32       330.5 330.5/313.1/329.3/329.3/328.6\ns8/s32         659.0 657.9/659.0/659.0/659.0/659.0\ndp4a           163.9 163.7/163.9/163.7/163.7/163.7\nffma            78.9 54.8/78.8/78.8/78.9/78.8\n"
+  },
+  "total_speedup": 1.2561254683570666,
+  "total_time_reduction_pct": 20.39011824925918,
+  "sampler_speedup": 1.2943793838261108,
+  "sampler_time_reduction_pct": 22.742898064085526,
+  "video_comparison": [
+    {
+      "seed": 101,
+      "decoded_video_identical": true,
+      "decoded_audio_identical": true
+    },
+    {
+      "seed": 102,
+      "decoded_video_identical": true,
+      "decoded_audio_identical": true
+    },
+    {
+      "seed": 103,
+      "decoded_video_identical": true,
+      "decoded_audio_identical": true
+    }
+  ]
+}

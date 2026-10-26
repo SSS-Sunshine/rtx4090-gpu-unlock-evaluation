@@ -1,0 +1,37 @@
+{
+  "model": "Qwen3.8-27B-BF16",
+  "tensor_parallel_size": 2,
+  "mtp": false,
+  "prefix_caching": false,
+  "archived_stock_tokens_per_second": [
+    32.6369,
+    32.6555,
+    32.6252
+  ],
+  "archived_stock_mean_tokens_per_second": 32.6392,
+  "all4_unlocked_tokens_per_second_adjusted": [
+    49.78570247108937,
+    49.79101824145154,
+    49.773152912102944
+  ],
+  "all4_unlocked_mean_tokens_per_second_adjusted": 49.78329120821462,
+  "speed_change_pct": 52.526076644692935,
+  "prompt_tokens_match": true,
+  "completion_tokens_match": true,
+  "stock_output_sha256": [
+    "e4cc7001e73b353120f0541670df0cf9ed6569b8ef8c75bbf477d66afb48c96c",
+    "e4cc7001e73b353120f0541670df0cf9ed6569b8ef8c75bbf477d66afb48c96c",
+    "e4cc7001e73b353120f0541670df0cf9ed6569b8ef8c75bbf477d66afb48c96c"
+  ],
+  "unlocked_answer_sha256": [
+    "5bf944b71513c8544f4395f9421754a0ab1fafb7d063a4e0c8355f7decfac5aa",
+    "5bf944b71513c8544f4395f9421754a0ab1fafb7d063a4e0c8355f7decfac5aa",
+    "5bf944b71513c8544f4395f9421754a0ab1fafb7d063a4e0c8355f7decfac5aa"
+  ],
+  "output_hashes_match": [
+    false,
+    false,
+    false
+  ],
+  "comparison_limit": "Prompt and completion token counts match, but output hashes and reasoning/content partition differ from the archived stock run; a current-software stock reboot is required for a strict bitwise A/B."
+}

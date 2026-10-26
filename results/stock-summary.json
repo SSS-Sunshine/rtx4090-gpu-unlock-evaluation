@@ -1,0 +1,17 @@
+{
+  "video_total_median_s": 92.23821070091799,
+  "sampler_median_s": 77.75201033405028,
+  "video_total_all_s": [
+    92.23821070091799,
+    92.63729350897484,
+    91.84970242599957
+  ],
+  "sampler_all_s": [
+    77.75201033405028,
+    78.03896418004297,
+    77.70577924279496
+  ],
+  "peak_power.draw [W]": 447.55,
+  "peak_memory.used [MiB]": 41570.0,
+  "peak_temperature.gpu": 64.0
+}

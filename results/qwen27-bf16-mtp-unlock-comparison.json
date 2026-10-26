@@ -1,0 +1,36 @@
+{
+  "model": "Qwen3.8-27B-BF16",
+  "tensor_parallel_size": 2,
+  "mtp_num_speculative_tokens": 1,
+  "prefix_caching": false,
+  "current_all4_unlocked_no_mtp_tokens_per_second": 49.78329120821462,
+  "current_all4_unlocked_mtp_tokens_per_second": [
+    74.79813589082764,
+    74.85339814467892,
+    74.76779162443472
+  ],
+  "current_all4_unlocked_mtp_mean_tokens_per_second": 74.8064418866471,
+  "mtp_gain_pct_same_boot_current_software": 50.264155043054814,
+  "archived_stock_no_mtp_tokens_per_second": 32.6392,
+  "combined_gain_pct_vs_archived_stock_no_mtp": 129.19202029047,
+  "archived_stock_mtp_tokens_per_second": 48.7679,
+  "gain_pct_vs_archived_stock_mtp": 53.39278887679622,
+  "mtp_accepted_tokens": 432,
+  "mtp_drafted_tokens": 588,
+  "mtp_acceptance_pct": 73.46938775510205,
+  "current_no_mtp_output_sha256": [
+    "5bf944b71513c8544f4395f9421754a0ab1fafb7d063a4e0c8355f7decfac5aa",
+    "5bf944b71513c8544f4395f9421754a0ab1fafb7d063a4e0c8355f7decfac5aa",
+    "5bf944b71513c8544f4395f9421754a0ab1fafb7d063a4e0c8355f7decfac5aa"
+  ],
+  "current_mtp_output_sha256": [
+    "9f5d92c7f3a6a200a1930abf42b87544d6027eedd68f3e072e191102a0d35632",
+    "9f5d92c7f3a6a200a1930abf42b87544d6027eedd68f3e072e191102a0d35632",
+    "9f5d92c7f3a6a200a1930abf42b87544d6027eedd68f3e072e191102a0d35632"
+  ],
+  "current_output_hashes_match": [
+    false,
+    false,
+    false
+  ]
+}

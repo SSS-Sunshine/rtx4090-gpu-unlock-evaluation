@@ -1,0 +1,113 @@
+{
+  "gpu_index": 0,
+  "gpu_name": "NVIDIA GeForce RTX 4090",
+  "torch": "2.14.0+cu130",
+  "tests": {
+    "torch_mm_torch.float16": {
+      "repetitions": [
+        {
+          "cuda_ms_per_step": 0.5808328151702881,
+          "wall_ms_per_step": 0.5811664500015468
+        },
+        {
+          "cuda_ms_per_step": 0.5808847904205322,
+          "wall_ms_per_step": 0.5810707750015354
+        },
+        {
+          "cuda_ms_per_step": 0.5812295913696289,
+          "wall_ms_per_step": 0.58141492499999
+        }
+      ],
+      "median_cuda_ms": 0.5808847904205322,
+      "median_wall_ms": 0.5811664500015468,
+      "finite": true,
+      "TFLOPS": 236.6027751776749
+    },
+    "torch_mm_torch.bfloat16": {
+      "repetitions": [
+        {
+          "cuda_ms_per_step": 0.9327615737915039,
+          "wall_ms_per_step": 0.9330576500019561
+        },
+        {
+          "cuda_ms_per_step": 0.9322239875793457,
+          "wall_ms_per_step": 0.9324750250016223
+        },
+        {
+          "cuda_ms_per_step": 0.9326335906982421,
+          "wall_ms_per_step": 0.9328632749998178
+        }
+      ],
+      "median_cuda_ms": 0.9326335906982421,
+      "median_wall_ms": 0.9328632749998178,
+      "finite": true,
+      "TFLOPS": 147.3665058204718
+    },
+    "sdpa_bf16_b2_h16_s4096_d64": {
+      "repetitions": [
+        {
+          "cuda_ms_per_step": 0.34092372258504233,
+          "wall_ms_per_step": 0.3412159333341454
+        },
+        {
+          "cuda_ms_per_step": 0.3394901275634766,
+          "wall_ms_per_step": 0.33976216667118325
+        },
+        {
+          "cuda_ms_per_step": 0.33815892537434894,
+          "wall_ms_per_step": 0.338431333329936
+        }
+      ],
+      "median_cuda_ms": 0.3394901275634766,
+      "median_wall_ms": 0.33976216667118325,
+      "finite": true
+    },
+    "resnet50_bf16_train_b32_224": {
+      "repetitions": [
+        {
+          "cuda_ms_per_step": 19.488246154785156,
+          "wall_ms_per_step": 19.489803099986602
+        },
+        {
+          "cuda_ms_per_step": 19.44647674560547,
+          "wall_ms_per_step": 19.447564600000078
+        },
+        {
+          "cuda_ms_per_step": 19.662136840820313,
+          "wall_ms_per_step": 19.663248199981354
+        }
+      ],
+      "median_cuda_ms": 19.488246154785156,
+      "median_wall_ms": 19.489803099986602,
+      "finite_loss": true,
+      "first_loss": 7.078125,
+      "last_loss": 4.96142578125,
+      "images_per_second": 1641.8842117508102,
+      "peak_allocated_MiB": 1551.7080078125
+    },
+    "gpt2_medium_bf16_train_b4_s512": {
+      "repetitions": [
+        {
+          "cuda_ms_per_step": 69.59862060546875,
+          "wall_ms_per_step": 69.60103199999139
+        },
+        {
+          "cuda_ms_per_step": 69.59895629882813,
+          "wall_ms_per_step": 69.60187360000418
+        },
+        {
+          "cuda_ms_per_step": 69.61458129882813,
+          "wall_ms_per_step": 69.61748140001873
+        }
+      ],
+      "median_cuda_ms": 69.59895629882813,
+      "median_wall_ms": 69.60187360000418,
+      "finite_loss": true,
+      "first_loss": 11.050101280212402,
+      "last_loss": 10.029921531677246,
+      "tokens_per_second": 29424.49526243611,
+      "peak_allocated_MiB": 7267.66845703125,
+      "parameters": 354298880
+    }
+  }
+}

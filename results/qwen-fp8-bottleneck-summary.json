@@ -1,0 +1,340 @@
+{
+  "requests": [
+    {
+      "label": "decode_1024",
+      "prompt_tokens": 22,
+      "completion_tokens": 1024,
+      "ttft_s": 0.2544857419998152,
+      "total_s": 10.527421920000052,
+      "decode_tokens_s": 99.58204570478901,
+      "finish_reason": "length"
+    },
+    {
+      "label": "prefill_long",
+      "prompt_tokens": 6018,
+      "completion_tokens": 64,
+      "ttft_s": 1.5572975739996764,
+      "total_s": 2.2063801890035393,
+      "decode_tokens_s": 97.06006376341641,
+      "finish_reason": "length"
+    }
+  ],
+  "telemetry": {
+    "decode_1024": [
+      {
+        "gpu": 0,
+        "samples": 40,
+        "gpu_util_pct": {
+          "mean": 96.625,
+          "max": 100,
+          "min": 2
+        },
+        "memory_controller_util_pct": {
+          "mean": 47.425,
+          "max": 51,
+          "min": 0
+        },
+        "power_W": {
+          "mean": 191.336275,
+          "max": 206.84,
+          "min": 62.262
+        },
+        "sm_clock_MHz": {
+          "mean": 2728.125,
+          "max": 2745,
+          "min": 2520
+        },
+        "memory_clock_MHz": {
+          "mean": 10251.0,
+          "max": 10251,
+          "min": 10251
+        },
+        "pcie_tx_KBps": {
+          "mean": 1024199.925,
+          "max": 3093066,
+          "min": 848291
+        },
+        "pcie_rx_KBps": {
+          "mean": 5728961.9,
+          "max": 23079687,
+          "min": 4420751
+        }
+      },
+      {
+        "gpu": 1,
+        "samples": 40,
+        "gpu_util_pct": {
+          "mean": 94.05,
+          "max": 99,
+          "min": 0
+        },
+        "memory_controller_util_pct": {
+          "mean": 48.4,
+          "max": 51,
+          "min": 0
+        },
+        "power_W": {
+          "mean": 195.824975,
+          "max": 220.513,
+          "min": 27.654
+        },
+        "sm_clock_MHz": {
+          "mean": 2532.0,
+          "max": 2790,
+          "min": 210
+        },
+        "memory_clock_MHz": {
+          "mean": 9266.4,
+          "max": 10251,
+          "min": 405
+        },
+        "pcie_tx_KBps": {
+          "mean": 1011792.65,
+          "max": 2981103,
+          "min": 847363
+        },
+        "pcie_rx_KBps": {
+          "mean": 5689208.5,
+          "max": 24171582,
+          "min": 4445068
+        }
+      },
+      {
+        "gpu": 2,
+        "samples": 40,
+        "gpu_util_pct": {
+          "mean": 94.05,
+          "max": 99,
+          "min": 0
+        },
+        "memory_controller_util_pct": {
+          "mean": 48.35,
+          "max": 51,
+          "min": 0
+        },
+        "power_W": {
+          "mean": 189.334825,
+          "max": 211.699,
+          "min": 31.176
+        },
+        "sm_clock_MHz": {
+          "mean": 2505.0,
+          "max": 2760,
+          "min": 210
+        },
+        "memory_clock_MHz": {
+          "mean": 9266.4,
+          "max": 10251,
+          "min": 405
+        },
+        "pcie_tx_KBps": {
+          "mean": 1031325.175,
+          "max": 2968261,
+          "min": 839746
+        },
+        "pcie_rx_KBps": {
+          "mean": 5857747.3,
+          "max": 23942089,
+          "min": 4192871
+        }
+      },
+      {
+        "gpu": 3,
+        "samples": 40,
+        "gpu_util_pct": {
+          "mean": 94.05,
+          "max": 99,
+          "min": 0
+        },
+        "memory_controller_util_pct": {
+          "mean": 48.375,
+          "max": 51,
+          "min": 0
+        },
+        "power_W": {
+          "mean": 178.15895,
+          "max": 199.196,
+          "min": 15.301
+        },
+        "sm_clock_MHz": {
+          "mean": 2518.5,
+          "max": 2775,
+          "min": 210
+        },
+        "memory_clock_MHz": {
+          "mean": 9266.4,
+          "max": 10251,
+          "min": 405
+        },
+        "pcie_tx_KBps": {
+          "mean": 947509.175,
+          "max": 1017333,
+          "min": 235351
+        },
+        "pcie_rx_KBps": {
+          "mean": 5151298.325,
+          "max": 5623828,
+          "min": 213037
+        }
+      }
+    ],
+    "prefill_long": [
+      {
+        "gpu": 0,
+        "samples": 9,
+        "gpu_util_pct": {
+          "mean": 88.66666666666667,
+          "max": 100,
+          "min": 0
+        },
+        "memory_controller_util_pct": {
+          "mean": 20.444444444444443,
+          "max": 50,
+          "min": 0
+        },
+        "power_W": {
+          "mean": 144.41666666666666,
+          "max": 182.138,
+          "min": 93.558
+        },
+        "sm_clock_MHz": {
+          "mean": 2745.0,
+          "max": 2745,
+          "min": 2745
+        },
+        "memory_clock_MHz": {
+          "mean": 10251.0,
+          "max": 10251,
+          "min": 10251
+        },
+        "pcie_tx_KBps": {
+          "mean": 2767387.777777778,
+          "max": 4049365,
+          "min": 831396
+        },
+        "pcie_rx_KBps": {
+          "mean": 3778325.222222222,
+          "max": 4600488,
+          "min": 3125878
+        }
+      },
+      {
+        "gpu": 1,
+        "samples": 9,
+        "gpu_util_pct": {
+          "mean": 77.66666666666667,
+          "max": 100,
+          "min": 0
+        },
+        "memory_controller_util_pct": {
+          "mean": 15.777777777777779,
+          "max": 50,
+          "min": 0
+        },
+        "power_W": {
+          "mean": 150.35466666666667,
+          "max": 199.168,
+          "min": 112.582
+        },
+        "sm_clock_MHz": {
+          "mean": 2790.0,
+          "max": 2790,
+          "min": 2790
+        },
+        "memory_clock_MHz": {
+          "mean": 10251.0,
+          "max": 10251,
+          "min": 10251
+        },
+        "pcie_tx_KBps": {
+          "mean": 2514143.3333333335,
+          "max": 3835693,
+          "min": 242187
+        },
+        "pcie_rx_KBps": {
+          "mean": 3439686.111111111,
+          "max": 5101074,
+          "min": 0
+        }
+      },
+      {
+        "gpu": 2,
+        "samples": 8,
+        "gpu_util_pct": {
+          "mean": 74.875,
+          "max": 100,
+          "min": 0
+        },
+        "memory_controller_util_pct": {
+          "mean": 16.5,
+          "max": 50,
+          "min": 0
+        },
+        "power_W": {
+          "mean": 142.42525,
+          "max": 190.753,
+          "min": 106.356
+        },
+        "sm_clock_MHz": {
+          "mean": 2760.0,
+          "max": 2760,
+          "min": 2760
+        },
+        "memory_clock_MHz": {
+          "mean": 10251.0,
+          "max": 10251,
+          "min": 10251
+        },
+        "pcie_tx_KBps": {
+          "mean": 2978234.25,
+          "max": 3910839,
+          "min": 803222
+        },
+        "pcie_rx_KBps": {
+          "mean": 3743828.75,
+          "max": 4862744,
+          "min": 3073925
+        }
+      },
+      {
+        "gpu": 3,
+        "samples": 8,
+        "gpu_util_pct": {
+          "mean": 74.875,
+          "max": 100,
+          "min": 0
+        },
+        "memory_controller_util_pct": {
+          "mean": 16.375,
+          "max": 50,
+          "min": 0
+        },
+        "power_W": {
+          "mean": 135.5335,
+          "max": 178.617,
+          "min": 88.761
+        },
+        "sm_clock_MHz": {
+          "mean": 2775.0,
+          "max": 2775,
+          "min": 2775
+        },
+        "memory_clock_MHz": {
+          "mean": 10251.0,
+          "max": 10251,
+          "min": 10251
+        },
+        "pcie_tx_KBps": {
+          "mean": 2943242.875,
+          "max": 3882861,
+          "min": 846679
+        },
+        "pcie_rx_KBps": {
+          "mean": 3858599.25,
+          "max": 5536718,
+          "min": 2973925
+        }
+      }
+    ]
+  }
+}

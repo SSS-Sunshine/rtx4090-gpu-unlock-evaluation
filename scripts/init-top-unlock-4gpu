@@ -1,0 +1,10 @@
+#!/bin/sh
+set -e
+case "$1" in prereqs) exit 0 ;; esac
+targets="0000:01:00.0,0000:22:00.0,0000:41:00.0,0000:61:00.0"
+case " $(cat /proc/cmdline) " in
+  *" gpu_unlock.targets=$targets "*)
+    echo 'gpu-unlock-evaluation: early four-RTX4090 attempt' > /dev/kmsg
+    modprobe gpu_unlock targets="$targets" || echo 'gpu-unlock-evaluation: module failed; continuing stock boot' > /dev/kmsg
+    ;;
+esac

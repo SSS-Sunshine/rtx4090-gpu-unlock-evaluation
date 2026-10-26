@@ -1,0 +1,9 @@
+#!/bin/sh
+set -e
+case "$1" in prereqs) exit 0 ;; esac
+case " $(cat /proc/cmdline) " in
+  *" gpu_unlock.targets=0000:01:00.0 "*)
+    echo 'gpu-unlock-evaluation: early GPU0-only attempt' > /dev/kmsg
+    modprobe gpu_unlock targets=0000:01:00.0 || echo 'gpu-unlock-evaluation: module failed; continuing stock boot' > /dev/kmsg
+    ;;
+esac

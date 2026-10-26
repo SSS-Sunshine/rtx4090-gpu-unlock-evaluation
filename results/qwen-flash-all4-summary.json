@@ -1,0 +1,194 @@
+{
+  "model": "Qwen3.8-Flash-Next",
+  "precision": "FP8",
+  "TP": 4,
+  "unlocked_gpu_indices": [
+    0,
+    1,
+    2,
+    3
+  ],
+  "thinking": true,
+  "reasoning_effort": "xhigh (model template default)",
+  "max_output_tokens_for_test": "16384 for short tasks; no explicit cap for full config task",
+  "gpu_memory_utilization_for_this_test": 0.97,
+  "tasks": [
+    {
+      "task": "gpu_service_review",
+      "repeats": 3,
+      "finish_reasons": [
+        "stop",
+        "stop",
+        "stop"
+      ],
+      "prompt_tokens": [
+        1086,
+        1086,
+        1086
+      ],
+      "completion_tokens": [
+        7775,
+        4734,
+        4314
+      ],
+      "reasoning_details": [
+        {
+          "reasoning_tokens": 6700
+        },
+        {
+          "reasoning_tokens": 3767
+        },
+        {
+          "reasoning_tokens": 3164
+        }
+      ],
+      "ttft_any_s_median": 0.33751980000010917,
+      "ttft_answer_s_median": 38.613179644999946,
+      "total_s_median": 48.35749397099994,
+      "decode_tokens_per_s_approx_median": 98.30102100064792,
+      "completion_tokens_per_total_s_median": 97.86804571825733
+    },
+    {
+      "task": "robot_nan_tests",
+      "repeats": 3,
+      "finish_reasons": [
+        "stop",
+        "stop",
+        "stop"
+      ],
+      "prompt_tokens": [
+        1501,
+        1501,
+        1501
+      ],
+      "completion_tokens": [
+        2234,
+        3684,
+        2573
+      ],
+      "reasoning_details": [
+        {
+          "reasoning_tokens": 1874
+        },
+        {
+          "reasoning_tokens": 3302
+        },
+        {
+          "reasoning_tokens": 2255
+        }
+      ],
+      "ttft_any_s_median": 0.4483432219999486,
+      "ttft_answer_s_median": 23.503963930000054,
+      "total_s_median": 26.738046350000104,
+      "decode_tokens_per_s_approx_median": 97.95964607779152,
+      "completion_tokens_per_total_s_median": 96.22991771049833
+    },
+    {
+      "task": "robot_training_config",
+      "repeats": 3,
+      "finish_reasons": [
+        "stop",
+        "stop",
+        "stop"
+      ],
+      "prompt_tokens": [
+        13109,
+        13109,
+        13109
+      ],
+      "completion_tokens": [
+        15312,
+        15451,
+        6391
+      ],
+      "reasoning_details": [
+        {
+          "reasoning_tokens": 15074
+        },
+        {
+          "reasoning_tokens": 15210
+        },
+        {
+          "reasoning_tokens": 5773
+        }
+      ],
+      "ttft_any_s_median": 3.6160096720000183,
+      "ttft_answer_s_median": 157.12373760900005,
+      "total_s_median": 159.50899244599987,
+      "decode_tokens_per_s_approx_median": 98.35631949156803,
+      "completion_tokens_per_total_s_median": 95.99458792383584
+    }
+  ],
+  "generated_test_validation": [
+    {
+      "file": "robot_nan_tests-1.json",
+      "finish_reason": "stop",
+      "tests": [
+        {
+          "name": "test_catches_root_link_quat_w_nan",
+          "passed": true
+        },
+        {
+          "name": "test_catches_joint_vel_inf",
+          "passed": true
+        },
+        {
+          "name": "test_catches_contact_sensor_force_inf",
+          "passed": true
+        },
+        {
+          "name": "test_missing_sensor_does_not_flag_clean_state",
+          "passed": true
+        }
+      ],
+      "all_passed": true
+    },
+    {
+      "file": "robot_nan_tests-2.json",
+      "finish_reason": "stop",
+      "tests": [
+        {
+          "name": "test_catches_root_link_quat_w_nan",
+          "passed": true
+        },
+        {
+          "name": "test_catches_joint_vel_inf",
+          "passed": true
+        },
+        {
+          "name": "test_catches_contact_sensor_force_inf",
+          "passed": true
+        },
+        {
+          "name": "test_missing_sensor_does_not_flag_clean_state",
+          "passed": true
+        }
+      ],
+      "all_passed": true
+    },
+    {
+      "file": "robot_nan_tests-3.json",
+      "finish_reason": "stop",
+      "tests": [
+        {
+          "name": "test_catches_root_link_quat_w_nan",
+          "passed": true
+        },
+        {
+          "name": "test_catches_joint_vel_inf",
+          "passed": true
+        },
+        {
+          "name": "test_catches_contact_sensor_force_inf",
+          "passed": true
+        },
+        {
+          "name": "test_missing_sensor_does_not_flag_clean_state",
+          "passed": true
+        }
+      ],
+      "all_passed": true
+    }
+  ],
+  "all_requests_completed": true
+}

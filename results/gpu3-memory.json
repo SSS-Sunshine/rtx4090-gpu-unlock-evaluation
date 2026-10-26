@@ -1,0 +1,5 @@
+{
+"gpu":"NVIDIA GeForce RTX 4090","compute_capability":"8.9","total_MiB":48759.6,"initial_free_MiB":48356.0,
+"d2d_memcpy_payload_GBps":459.584,"d2d_memcpy_read_write_GBps":919.168,
+"copy_kernel_payload_GBps":442.682,"copy_kernel_read_write_GBps":885.365,
+"pcie_h2d_GBps":23.379,"pcie_d2h_GBps":21.969,"vram_test_MiB":46080.0,"patterns":[{"seed":"0x0000000000000000","errors":0,"write_GBps":849.906,"verify_GBps":956.497},{"seed":"0xffffffffffffffff","errors":0,"write_GBps":853.708,"verify_GBps":956.792},{"seed":"0x9e3779b97f4a7c15","errors":0,"write_GBps":853.611,"verify_GBps":956.652}],"total_memory_errors":0}

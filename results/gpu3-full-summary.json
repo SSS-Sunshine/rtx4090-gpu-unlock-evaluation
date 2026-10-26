@@ -1,0 +1,305 @@
+{
+  "gpu_index": 3,
+  "uuid": "GPU-REDACTED-3",
+  "pci_bus": "0000:61:00.0",
+  "unlock_confirmed": true,
+  "driver": "595.99.02",
+  "power_limit_W": 450,
+  "pcie": {
+    "generation": 4,
+    "width": 16,
+    "replays_since_reset": 0,
+    "h2d_GBps": 23.379,
+    "d2h_GBps": 21.969
+  },
+  "memory": {
+    "total_MiB_cuda": 48759.6,
+    "tested_MiB": 46080.0,
+    "patterns": 3,
+    "errors": 0,
+    "write_GBps": [
+      849.906,
+      853.708,
+      853.611
+    ],
+    "verify_read_GBps": [
+      956.497,
+      956.792,
+      956.652
+    ],
+    "d2d_payload_GBps": 459.584,
+    "d2d_read_write_GBps": 919.168,
+    "copy_kernel_payload_GBps": 442.682,
+    "copy_kernel_read_write_GBps": 885.365,
+    "ecc_reporting": "N/A on RTX 4090",
+    "memory_temperature_reporting": "N/A on this board/driver"
+  },
+  "instruction_throughput": {
+    "fp16_fp32_TFLOPS_mma": 332.8,
+    "bf16_fp32_TFLOPS_mma": 332.6,
+    "int8_int32_TOPS_mma": 665.4,
+    "dp4a_TOPS": 165.5,
+    "scalar_fp32_TFLOPS": 79.7,
+    "tf32_fp32_TFLOPS_tensor_mode": 150.7393767133131,
+    "u4_int32_TOPS_tensor_mode": 1305.2664960966326,
+    "tensor_mode_mismatches": 0
+  },
+  "numerical_validation": {
+    "cases": 6,
+    "failures": 0,
+    "gemm_failures": 0
+  },
+  "cublas_gemm": [
+    {
+      "mode": "FP16/FP32",
+      "n": 1024,
+      "warmups": 10,
+      "iterations": 20,
+      "reps": 5,
+      "times_ms": [
+        0.0165888,
+        0.0163792,
+        0.016472,
+        0.0162784,
+        0.0162816
+      ],
+      "median_TF_s": 131.110412,
+      "best_TF_s": 131.922284,
+      "cells_checked": 1048576,
+      "failures": 0
+    },
+    {
+      "mode": "BF16/FP32",
+      "n": 1024,
+      "warmups": 10,
+      "iterations": 20,
+      "reps": 5,
+      "times_ms": [
+        0.0136704,
+        0.0135568,
+        0.0134656,
+        0.0135168,
+        0.0134656
+      ],
+      "median_TF_s": 158.87515,
+      "best_TF_s": 159.479243,
+      "cells_checked": 1048576,
+      "failures": 0
+    },
+    {
+      "mode": "FP16/FP32",
+      "n": 4096,
+      "warmups": 10,
+      "iterations": 20,
+      "reps": 5,
+      "times_ms": [
+        0.69703202,
+        0.69544959,
+        0.66573439,
+        0.64061279,
+        0.65664001
+      ],
+      "median_TF_s": 206.44713,
+      "best_TF_s": 214.542942,
+      "cells_checked": 16777216,
+      "failures": 0
+    },
+    {
+      "mode": "BF16/FP32",
+      "n": 4096,
+      "warmups": 10,
+      "iterations": 20,
+      "reps": 5,
+      "times_ms": [
+        0.92375364,
+        0.92369919,
+        0.92395515,
+        0.92390404,
+        0.92410879
+      ],
+      "median_TF_s": 148.758906,
+      "best_TF_s": 148.791896,
+      "cells_checked": 16777216,
+      "failures": 0
+    },
+    {
+      "mode": "FP16/FP32",
+      "n": 8192,
+      "warmups": 10,
+      "iterations": 20,
+      "reps": 5,
+      "times_ms": [
+        5.78553581,
+        5.80869102,
+        5.80488319,
+        5.82655983,
+        5.81294098
+      ],
+      "median_TF_s": 189.287332,
+      "best_TF_s": 190.044909,
+      "cells_checked": 67108864,
+      "failures": 0
+    },
+    {
+      "mode": "BF16/FP32",
+      "n": 8192,
+      "warmups": 10,
+      "iterations": 20,
+      "reps": 5,
+      "times_ms": [
+        5.88257599,
+        5.79379692,
+        5.79256325,
+        5.79152145,
+        5.79296951
+      ],
+      "median_TF_s": 189.801038,
+      "best_TF_s": 189.848494,
+      "cells_checked": 67108864,
+      "failures": 0
+    }
+  ],
+  "pytorch": {
+    "torch_mm_torch.float16": {
+      "repetitions": [
+        {
+          "cuda_ms_per_step": 0.5876976013183594,
+          "wall_ms_per_step": 0.5879039999854285
+        },
+        {
+          "cuda_ms_per_step": 0.6060224056243897,
+          "wall_ms_per_step": 0.6062712000129977
+        },
+        {
+          "cuda_ms_per_step": 0.6141136169433594,
+          "wall_ms_per_step": 0.6143577000102596
+        }
+      ],
+      "median_cuda_ms": 0.6060224056243897,
+      "median_wall_ms": 0.6062712000129977,
+      "finite": true,
+      "TFLOPS": 226.78856787546587
+    },
+    "torch_mm_torch.bfloat16": {
+      "repetitions": [
+        {
+          "cuda_ms_per_step": 0.9375231742858887,
+          "wall_ms_per_step": 0.937845099997503
+        },
+        {
+          "cuda_ms_per_step": 0.9373696327209473,
+          "wall_ms_per_step": 0.9376351750006506
+        },
+        {
+          "cuda_ms_per_step": 0.9372847557067872,
+          "wall_ms_per_step": 0.9377208000159953
+        }
+      ],
+      "median_cuda_ms": 0.9373696327209473,
+      "median_wall_ms": 0.9377208000159953,
+      "finite": true,
+      "TFLOPS": 146.62193938697314
+    },
+    "sdpa_bf16_b2_h16_s4096_d64": {
+      "repetitions": [
+        {
+          "cuda_ms_per_step": 0.33757867813110354,
+          "wall_ms_per_step": 0.337877366655448
+        },
+        {
+          "cuda_ms_per_step": 0.3370005289713542,
+          "wall_ms_per_step": 0.3373132666638412
+        },
+        {
+          "cuda_ms_per_step": 0.33815892537434894,
+          "wall_ms_per_step": 0.3386244666520118
+        }
+      ],
+      "median_cuda_ms": 0.33757867813110354,
+      "median_wall_ms": 0.337877366655448,
+      "finite": true
+    },
+    "resnet50_bf16_train_b32_224": {
+      "repetitions": [
+        {
+          "cuda_ms_per_step": 26.614779663085937,
+          "wall_ms_per_step": 26.616249199923914
+        },
+        {
+          "cuda_ms_per_step": 24.46612548828125,
+          "wall_ms_per_step": 24.467981199995847
+        },
+        {
+          "cuda_ms_per_step": 25.669418334960938,
+          "wall_ms_per_step": 25.671280799997476
+        }
+      ],
+      "median_cuda_ms": 25.669418334960938,
+      "median_wall_ms": 25.671280799997476,
+      "finite_loss": true,
+      "first_loss": 7.078125,
+      "last_loss": 4.96142578125,
+      "images_per_second": 1246.5291564261627,
+      "peak_allocated_MiB": 1551.7080078125
+    },
+    "gpt2_medium_bf16_train_b4_s512": {
+      "repetitions": [
+        {
+          "cuda_ms_per_step": 73.73742065429687,
+          "wall_ms_per_step": 73.74205659998552
+        },
+        {
+          "cuda_ms_per_step": 74.4648681640625,
+          "wall_ms_per_step": 74.4702062000215
+        },
+        {
+          "cuda_ms_per_step": 72.2032470703125,
+          "wall_ms_per_step": 72.20843539998896
+        }
+      ],
+      "median_cuda_ms": 73.73742065429687,
+      "median_wall_ms": 73.74205659998552,
+      "finite_loss": true,
+      "first_loss": 11.050101280212402,
+      "last_loss": 9.955549240112305,
+      "tokens_per_second": 27772.482819531266,
+      "peak_allocated_MiB": 7267.66845703125,
+      "parameters": 354298880
+    }
+  },
+  "stress": {
+    "seconds": 65.990601,
+    "iterations": 11297,
+    "average_TFLOPS": 188.227,
+    "samples": 136,
+    "power_W": {
+      "min": 12.41,
+      "max": 395.85,
+      "mean": 367.5903676470588
+    },
+    "temperature_C": {
+      "min": 27.0,
+      "max": 56.0,
+      "mean": 49.68382352941177
+    },
+    "graphics_clock_MHz": {
+      "min": 210.0,
+      "max": 2745.0,
+      "mean": 2596.2132352941176
+    },
+    "sm_clock_MHz": {
+      "min": 210.0,
+      "max": 2745.0,
+      "mean": 2596.2132352941176
+    },
+    "memory_clock_MHz": {
+      "min": 405.0,
+      "max": 10251.0,
+      "mean": 10033.808823529413
+    },
+    "utilization_100pct_samples": 132,
+    "hardware_thermal_slowdown": false,
+    "hardware_power_brake": false,
+    "xid_errors": 0
+  }
+}

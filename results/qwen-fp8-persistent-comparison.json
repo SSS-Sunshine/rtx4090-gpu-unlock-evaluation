@@ -1,0 +1,30 @@
+{
+  "baseline": "four GPUs unlocked with one-shot boot entry",
+  "candidate": "same boot after permanent DKMS/GRUB installation",
+  "tasks": [
+    {
+      "task": "gpu_service_review",
+      "before_tokens_per_second": 98.30102100064792,
+      "after_tokens_per_second": 98.44117488221535,
+      "change_pct": 0.1425762216310078,
+      "before_ttft_s": 0.33751980000010917,
+      "after_ttft_s": 0.34313986499910243
+    },
+    {
+      "task": "robot_nan_tests",
+      "before_tokens_per_second": 97.95964607779152,
+      "after_tokens_per_second": 97.33793565392213,
+      "change_pct": -0.6346597285331934,
+      "before_ttft_s": 0.4483432219999486,
+      "after_ttft_s": 0.44565390699426644
+    },
+    {
+      "task": "robot_training_config",
+      "before_tokens_per_second": 98.35631949156803,
+      "after_tokens_per_second": 97.78071430968,
+      "change_pct": -0.5852244013028418,
+      "before_ttft_s": 3.6160096720000183,
+      "after_ttft_s": 3.6411779480040423
+    }
+  ]
+}
