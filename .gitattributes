@@ -2,3 +2,5 @@
 *.png binary
 *.jpg binary
 *.zip binary
+*.patch -whitespace
+third_party/COPYING.open-gpu-kernel-modules -whitespace

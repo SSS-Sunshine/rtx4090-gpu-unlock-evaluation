@@ -1,0 +1,18 @@
+{
+  "kernel": "7.0.0-38-generic",
+  "nvidia_userspace": "595.99.02",
+  "gpu_unlock_dkms": "gpu-unlock/1.1.1",
+  "p2p_dkms": "nvidia-open-p2p/595.99.02-p2p3",
+  "p2p_package": "nvidia-open-p2p-dkms 595.99.02-3ubuntu24.04p2p",
+  "p2p_package_sha256": "dac2180d621b95deab7784c3ffaae34eb0e203ef816305fe73ed3e78693e34bd",
+  "p2p_source_patch_sha256": "b005ba9be85cf70770bc58e4d03e2bfe3843b5c6eaa09c4aeb4fc1f94f2d0fe5",
+  "running_p2p_srcversion": "ED321805D08C46B02C20421",
+  "stock_rescue_srcversion": "D35CC5B925B9243B563D3E0",
+  "autoinstall": true,
+  "early_unlock_before_udev": true,
+  "apt_mark_holds": [],
+  "exact_userspace_pairing": true,
+  "validated_default_entry": "nvidia-p2p-48g-test-7.0.0-38",
+  "stock_rescue_entry": "nvidia-stock-rescue-7.0.0-38",
+  "stock_rescue_initramfs_sha256": "92354b865f87257787c6f413b4247901ff79bf53e1864e89f7c83f9dff3a4c09"
+}

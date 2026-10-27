@@ -1,0 +1,134 @@
+{
+  "schema": 1,
+  "scope": {
+    "gpus": "4x modified RTX 4090 48GB",
+    "other_gpus_excluded": "2x A30",
+    "kernel": "7.0.0-38-generic",
+    "driver": "595.99.02 open kernel module",
+    "tensor_unlock": "gpu-unlock-ada 1.1.1",
+    "p2p": "dynamic per-allocation BAR1, 32GB BAR1 / 48GB framebuffer"
+  },
+  "tensor_issue_rate": {
+    "stock_f16_input_f32_accumulate_TFps": 164.9,
+    "unlocked_four_gpu_range_TFps": [
+      328.0,
+      334.4
+    ],
+    "stock_bf16_input_f32_accumulate_TFps": 164.8,
+    "unlocked_bf16_four_gpu_range_TFps": [
+      331.0,
+      334.2
+    ],
+    "unlocked_fp8_e4m3_four_gpu_range_TFps": [
+      660.1,
+      666.1
+    ],
+    "note": "FP16/BF16 retain about 2x issue rate with P2P active; FP8 does not receive another 2x multiplier."
+  },
+  "p2p_correctness": {
+    "directed_pairs": 12,
+    "rounds": 3,
+    "sizes": 5,
+    "cases": 180,
+    "all_passed": true,
+    "resident_GiB": 34,
+    "window_MiB": 64,
+    "resident_boundary_bidirectional_pass": true
+  },
+  "nccl_allreduce": {
+    "rows": [
+      {
+        "size_MiB": 1,
+        "disabled_ms": 0.37215157499872475,
+        "enabled_ms": 0.3277635250000799,
+        "latency_change_percent": -11.927411565783908,
+        "speedup_x": 1.135427058269019
+      },
+      {
+        "size_MiB": 16,
+        "disabled_ms": 6.440059249999308,
+        "enabled_ms": 2.834287324999707,
+        "latency_change_percent": -55.989732159684536,
+        "speedup_x": 2.272197032811405
+      },
+      {
+        "size_MiB": 64,
+        "disabled_ms": 25.70572879999986,
+        "enabled_ms": 10.029629400000317,
+        "latency_change_percent": -60.98290199031287,
+        "speedup_x": 2.5629789272172956
+      },
+      {
+        "size_MiB": 256,
+        "disabled_ms": 102.2502665999994,
+        "enabled_ms": 37.84675065000016,
+        "latency_change_percent": -62.986159441465574,
+        "speedup_x": 2.7016920830427744
+      }
+    ],
+    "p2p_enabled_transport": {
+      "p2p_disable_messages": 0,
+      "all_cuda_p2p_true": 4,
+      "via_shm": 0,
+      "via_p2p": 22,
+      "direct_pointer": 0
+    },
+    "p2p_disabled_transport": {
+      "p2p_disable_messages": 4,
+      "all_cuda_p2p_true": 4,
+      "via_shm": 22,
+      "via_p2p": 0,
+      "direct_pointer": 0
+    }
+  },
+  "qwen_flash_real_project_concurrency_8": {
+    "tp4_shm": {
+      "runs": [
+        331.3118591903775,
+        331.6887455711338
+      ],
+      "mean": 331.50030238075567
+    },
+    "tp4_p2p": {
+      "runs": [
+        354.4066850288085,
+        357.4229299052436
+      ],
+      "mean": 355.9148074670261
+    },
+    "tp4_p2p_gain_percent": 7.364851528318761,
+    "tep4_shm": {
+      "runs": [
+        430.2825851422455,
+        434.1687912408998
+      ],
+      "mean": 432.22568819157266
+    },
+    "tep4_p2p": {
+      "runs": [
+        465.80154290128223,
+        469.42138952061316
+      ],
+      "mean": 467.6114662109477
+    },
+    "tep4_p2p_gain_percent": 8.186875279770799,
+    "original_max_num_seqs_1": 94.81283844330441,
+    "final_vs_original_speedup_x": 4.931942486782178
+  },
+  "qwen27_bf16_tp2_mtp1": {
+    "p2p_tokens_per_second": 73.62307082292386,
+    "shm_tokens_per_second": 75.11593863729937,
+    "p2p_change_percent": -1.9874181717729478,
+    "output_hash_equal": true,
+    "note": "Batch-1 hidden-state collectives are around 10KiB; P2P bandwidth does not offset small-message synchronization cost."
+  },
+  "update_lifecycle": {
+    "dkms_package": "nvidia-open-p2p-dkms 595.99.02-3ubuntu24.04p2p",
+    "dkms_version": "nvidia-open-p2p/595.99.02-p2p3",
+    "autoinstall": true,
+    "exact_userspace_pairing": true,
+    "apt_mark_holds": 0,
+    "stock_rescue_entry": "nvidia-stock-rescue-7.0.0-38",
+    "validated_default_entry": "nvidia-p2p-48g-test-7.0.0-38"
+  }
+}

@@ -6,6 +6,7 @@ Published:
 - Numerical mismatch counts and generated-test pass/fail results.
 - Sanitized benchmark scripts and service configuration examples.
 - Source and binary commit/hash provenance.
+- Matching-version source patches and package metadata, without compiled modules.
 
 Excluded:
 
@@ -15,6 +16,7 @@ Excluded:
 - Full local-model chain-of-thought and private project source prompts.
 - Model weights, NVIDIA firmware archives, generated firmware binaries, and
   compiled benchmark executables.
+- Compiled NVIDIA kernel modules and locally built DKMS `.deb` files.
 
 The upstream project documents the NVIDIA firmware provenance and licensing.
 This repository contains hashes and measurements, not redistributable firmware.

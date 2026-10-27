@@ -1,0 +1,6 @@
+Visible GPUs: 4, buffer=256MB
+   self     26.0    26.2    10.9   <- GPU0 as src (GB/s, row=src col=dst)
+   26.3    self     26.2    11.0   <- GPU1 as src (GB/s, row=src col=dst)
+   26.3    26.3    self     10.7   <- GPU2 as src (GB/s, row=src col=dst)
+   26.3    26.3    26.1    self    <- GPU3 as src (GB/s, row=src col=dst)
+done

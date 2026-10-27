@@ -1,0 +1,13 @@
+running_driver_version:
+595.99.02
+running_driver_srcversion:
+ED321805D08C46B02C20421
+kernel:
+7.0.0-38-generic
+visible_gpu_inventory:
+0, NVIDIA GeForce RTX 4090, 49140 MiB, 595.99.02
+1, NVIDIA GeForce RTX 4090, 49140 MiB, 595.99.02
+2, NVIDIA GeForce RTX 4090, 49140 MiB, 595.99.02
+3, NVIDIA GeForce RTX 4090, 49140 MiB, 595.99.02
+4, NVIDIA A30, 24576 MiB, 595.99.02
+5, NVIDIA A30, 24576 MiB, 595.99.02

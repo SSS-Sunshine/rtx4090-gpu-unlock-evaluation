@@ -1,0 +1,4 @@
+local=0 remote=1 mode=write payload_GBps=11.582 elapsed_ms=927.106
+local=1 remote=0 mode=write payload_GBps=26.268 elapsed_ms=408.772
+local=0 remote=1 mode=read payload_GBps=6.310 elapsed_ms=1701.663
+local=1 remote=0 mode=read payload_GBps=14.333 elapsed_ms=749.120

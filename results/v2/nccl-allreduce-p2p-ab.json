@@ -1,0 +1,104 @@
+{
+  "cases": {
+    "p2p-disabled": {
+      "rows": [
+        {
+          "size_MiB": 1,
+          "median_ms_across_ranks": 0.37215157499872475,
+          "median_bus_GBps_across_ranks": 4.226406979943288,
+          "all_correct": true
+        },
+        {
+          "size_MiB": 16,
+          "median_ms_across_ranks": 6.440059249999308,
+          "median_bus_GBps_across_ranks": 3.9077008005689082,
+          "all_correct": true
+        },
+        {
+          "size_MiB": 64,
+          "median_ms_across_ranks": 25.70572879999986,
+          "median_bus_GBps_across_ranks": 3.915986872959773,
+          "all_correct": true
+        },
+        {
+          "size_MiB": 256,
+          "median_ms_across_ranks": 102.2502665999994,
+          "median_bus_GBps_across_ranks": 3.9379181837888613,
+          "all_correct": true
+        }
+      ],
+      "transport_evidence": {
+        "p2p_disable_messages": 4,
+        "all_cuda_p2p_true": 4,
+        "via_shm": 22,
+        "via_p2p": 0,
+        "direct_pointer": 0
+      }
+    },
+    "p2p-enabled": {
+      "rows": [
+        {
+          "size_MiB": 1,
+          "median_ms_across_ranks": 0.3277635250000799,
+          "median_bus_GBps_across_ranks": 4.798797427382016,
+          "all_correct": true
+        },
+        {
+          "size_MiB": 16,
+          "median_ms_across_ranks": 2.834287324999707,
+          "median_bus_GBps_across_ranks": 8.879135178903862,
+          "all_correct": true
+        },
+        {
+          "size_MiB": 64,
+          "median_ms_across_ranks": 10.029629400000317,
+          "median_bus_GBps_across_ranks": 10.036600622673404,
+          "all_correct": true
+        },
+        {
+          "size_MiB": 256,
+          "median_ms_across_ranks": 37.84675065000016,
+          "median_bus_GBps_across_ranks": 10.639042401908508,
+          "all_correct": true
+        }
+      ],
+      "transport_evidence": {
+        "p2p_disable_messages": 0,
+        "all_cuda_p2p_true": 4,
+        "via_shm": 0,
+        "via_p2p": 22,
+        "direct_pointer": 0
+      }
+    }
+  },
+  "comparison": [
+    {
+      "size_MiB": 1,
+      "disabled_ms": 0.37215157499872475,
+      "enabled_ms": 0.3277635250000799,
+      "latency_change_percent": -11.927411565783908,
+      "speedup_x": 1.135427058269019
+    },
+    {
+      "size_MiB": 16,
+      "disabled_ms": 6.440059249999308,
+      "enabled_ms": 2.834287324999707,
+      "latency_change_percent": -55.989732159684536,
+      "speedup_x": 2.272197032811405
+    },
+    {
+      "size_MiB": 64,
+      "disabled_ms": 25.70572879999986,
+      "enabled_ms": 10.029629400000317,
+      "latency_change_percent": -60.98290199031287,
+      "speedup_x": 2.5629789272172956
+    },
+    {
+      "size_MiB": 256,
+      "disabled_ms": 102.2502665999994,
+      "enabled_ms": 37.84675065000016,
+      "latency_change_percent": -62.986159441465574,
+      "speedup_x": 2.7016920830427744
+    }
+  ]
+}

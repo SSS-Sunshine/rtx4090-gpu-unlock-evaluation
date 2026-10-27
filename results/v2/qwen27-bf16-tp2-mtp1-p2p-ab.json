@@ -1,0 +1,23 @@
+{
+  "model": "Qwen3.8-27B-BF16",
+  "tensor_parallel_size": 2,
+  "mtp_num_speculative_tokens": 1,
+  "concurrency": 1,
+  "completion_tokens": 256,
+  "p2p_enabled_tokens_per_second": [
+    73.56045911459374,
+    73.66066070376685,
+    73.64809265041099
+  ],
+  "p2p_enabled_mean_tokens_per_second": 73.62307082292386,
+  "p2p_disabled_tokens_per_second": [
+    75.10478033578025,
+    75.11816615571709,
+    75.12486942040076
+  ],
+  "p2p_disabled_mean_tokens_per_second": 75.11593863729937,
+  "p2p_change_percent": -1.9874181717729478,
+  "output_hash_equal_between_modes": true,
+  "finish_reason": "length",
+  "interpretation": "The batch-1 hidden-state collective is around 10 KiB. Small-message synchronization cost offsets P2P bandwidth on this TP2 workload."
+}

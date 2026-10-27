@@ -1,0 +1,2 @@
+src=GPU0 dst=GPU1 resident=34GiB window=64MiB free_before=46.97GiB mismatches=0 resident_sentinel=PASS -> PASS
+src=GPU1 dst=GPU0 resident=34GiB window=64MiB free_before=46.97GiB mismatches=0 resident_sentinel=PASS -> PASS

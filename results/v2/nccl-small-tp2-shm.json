@@ -1,0 +1,135 @@
+{
+  "world_size": 2,
+  "rank_results": [
+    [
+      {
+        "size_KiB": 4,
+        "median_us": 52.605285000026925,
+        "algorithm_GBps": 0.07786289913642525,
+        "bus_GBps": 0.07786289913642525,
+        "correct": true
+      },
+      {
+        "size_KiB": 8,
+        "median_us": 39.82817000178329,
+        "algorithm_GBps": 0.20568356516589154,
+        "bus_GBps": 0.20568356516589154,
+        "correct": true
+      },
+      {
+        "size_KiB": 16,
+        "median_us": 44.42882500370615,
+        "algorithm_GBps": 0.3687695994353504,
+        "bus_GBps": 0.3687695994353504,
+        "correct": true
+      },
+      {
+        "size_KiB": 32,
+        "median_us": 42.335540001658956,
+        "algorithm_GBps": 0.7740068981927704,
+        "bus_GBps": 0.7740068981927704,
+        "correct": true
+      },
+      {
+        "size_KiB": 64,
+        "median_us": 43.86960999909206,
+        "algorithm_GBps": 1.4938815275849582,
+        "bus_GBps": 1.4938815275849582,
+        "correct": true
+      },
+      {
+        "size_KiB": 128,
+        "median_us": 69.61383999623649,
+        "algorithm_GBps": 1.8828439862976398,
+        "bus_GBps": 1.8828439862976398,
+        "correct": true
+      },
+      {
+        "size_KiB": 256,
+        "median_us": 134.74194500304293,
+        "algorithm_GBps": 1.9455263169466634,
+        "bus_GBps": 1.9455263169466634,
+        "correct": true
+      },
+      {
+        "size_KiB": 512,
+        "median_us": 157.58760999233346,
+        "algorithm_GBps": 3.326962062725022,
+        "bus_GBps": 3.326962062725022,
+        "correct": true
+      },
+      {
+        "size_KiB": 1024,
+        "median_us": 311.885560004157,
+        "algorithm_GBps": 3.362053696830414,
+        "bus_GBps": 3.362053696830414,
+        "correct": true
+      }
+    ],
+    [
+      {
+        "size_KiB": 4,
+        "median_us": 52.671760004159296,
+        "algorithm_GBps": 0.07776463136368623,
+        "bus_GBps": 0.07776463136368623,
+        "correct": true
+      },
+      {
+        "size_KiB": 8,
+        "median_us": 39.922054993439815,
+        "algorithm_GBps": 0.20519985760618156,
+        "bus_GBps": 0.20519985760618156,
+        "correct": true
+      },
+      {
+        "size_KiB": 16,
+        "median_us": 44.47557000275992,
+        "algorithm_GBps": 0.3683820128439792,
+        "bus_GBps": 0.3683820128439792,
+        "correct": true
+      },
+      {
+        "size_KiB": 32,
+        "median_us": 42.39785999743617,
+        "algorithm_GBps": 0.772869196746758,
+        "bus_GBps": 0.772869196746758,
+        "correct": true
+      },
+      {
+        "size_KiB": 64,
+        "median_us": 43.83995499665616,
+        "algorithm_GBps": 1.4948920455095969,
+        "bus_GBps": 1.4948920455095969,
+        "correct": true
+      },
+      {
+        "size_KiB": 128,
+        "median_us": 69.62496499909321,
+        "algorithm_GBps": 1.8825431366709784,
+        "bus_GBps": 1.8825431366709784,
+        "correct": true
+      },
+      {
+        "size_KiB": 256,
+        "median_us": 134.6141500016529,
+        "algorithm_GBps": 1.9473732887425372,
+        "bus_GBps": 1.9473732887425372,
+        "correct": true
+      },
+      {
+        "size_KiB": 512,
+        "median_us": 157.60880500238272,
+        "algorithm_GBps": 3.326514657554023,
+        "bus_GBps": 3.326514657554023,
+        "correct": true
+      },
+      {
+        "size_KiB": 1024,
+        "median_us": 311.9555949979258,
+        "algorithm_GBps": 3.3612989054002123,
+        "bus_GBps": 3.3612989054002123,
+        "correct": true
+      }
+    ]
+  ]
+}

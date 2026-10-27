@@ -1,0 +1,94 @@
+{
+  "project": "MicroDuck real training configuration review",
+  "concurrency": 8,
+  "requested_output_tokens_each": 2000,
+  "prompt_sha256": "ef3dd5da9126e13fc54db334f75bd3bcd5296bf4ccae89f2e0b57bedb9431d60",
+  "wall_s": 34.08451416400021,
+  "total_completion_tokens": 16000,
+  "aggregate_completion_tokens_s": 469.42138952061316,
+  "median_request_tokens_s": 60.684607489877806,
+  "median_ttft_s": 1.1127210250001554,
+  "identical_outputs": false,
+  "runs": [
+    {
+      "index": 0,
+      "prompt_tokens": 1500,
+      "completion_tokens": 2000,
+      "ttft_s": 0.3302328569998281,
+      "total_s": 33.99602141000014,
+      "decode_tokens_s": 59.37788223236732,
+      "finish_reason": "length",
+      "output_sha256": "521470a9e97cf9c0ad3cadd28e983ea7fec68af9940bd42022ceffa2e6ee7ff6"
+    },
+    {
+      "index": 1,
+      "prompt_tokens": 1500,
+      "completion_tokens": 2000,
+      "ttft_s": 0.6052023820002432,
+      "total_s": 34.02695374699988,
+      "decode_tokens_s": 59.81141348348236,
+      "finish_reason": "length",
+      "output_sha256": "6ff01c91e620e785189750ff4e3936062549bb895f6375335c2328fbad1e860b"
+    },
+    {
+      "index": 2,
+      "prompt_tokens": 1500,
+      "completion_tokens": 2000,
+      "ttft_s": 0.8451676320000843,
+      "total_s": 34.039494214000115,
+      "decode_tokens_s": 60.221205888522675,
+      "finish_reason": "length",
+      "output_sha256": "84932e91110194245456f70e708b0360973cf52210c8a347a1106efe1e7b5fde"
+    },
+    {
+      "index": 3,
+      "prompt_tokens": 1500,
+      "completion_tokens": 2000,
+      "ttft_s": 1.1129024290003144,
+      "total_s": 34.05386166700009,
+      "decode_tokens_s": 60.68438887129626,
+      "finish_reason": "length",
+      "output_sha256": "e46960e1f5032912b639d31587eb08865fee3005c4e3d16a9355a3023a6c8236"
+    },
+    {
+      "index": 4,
+      "prompt_tokens": 1500,
+      "completion_tokens": 2000,
+      "ttft_s": 1.1125396209999963,
+      "total_s": 34.05326714900002,
+      "decode_tokens_s": 60.68482610845936,
+      "finish_reason": "length",
+      "output_sha256": "5dabb739f355c4a2a8e2b4c2bbb1f0f6d622c603e92a779717c36ed221c5ec0a"
+    },
+    {
+      "index": 5,
+      "prompt_tokens": 1500,
+      "completion_tokens": 2000,
+      "ttft_s": 1.3563794619999499,
+      "total_s": 34.06422373999976,
+      "decode_tokens_s": 61.11690440833201,
+      "finish_reason": "length",
+      "output_sha256": "e1d983d3b58d06b27556568785f946a3de0def60d47ebc05e2cfec469bfa8673"
+    },
+    {
+      "index": 6,
+      "prompt_tokens": 1500,
+      "completion_tokens": 2000,
+      "ttft_s": 1.6367547370000466,
+      "total_s": 34.0753732080002,
+      "decode_tokens_s": 61.62414905194002,
+      "finish_reason": "length",
+      "output_sha256": "e46aead77394ed7665b0e892264e3e60c873ca9863def7cab9ce1d3b993b0cb7"
+    },
+    {
+      "index": 7,
+      "prompt_tokens": 1500,
+      "completion_tokens": 2000,
+      "ttft_s": 1.7611663659999977,
+      "total_s": 34.08283385499999,
+      "decode_tokens_s": 61.84712878377726,
+      "finish_reason": "length",
+      "output_sha256": "a5a67bb779919f76fb31ddcc30f8f46d3f09a0bdfc54cb8b1c00f3ad9e82a764"
+    }
+  ]
+}
